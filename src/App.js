@@ -7,15 +7,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   const plants = plantData.map((plant) => {
-    return (
-      <Contact
-        image={plant.image}
-        name={plant.name}
-        price={plant.price}
-        origin={plant.origin}
-        openSpot={plant.openSpot}
-      />
-    );
+    return <Contact key={plant.id} {...plant} />;
   });
   return (
     <div>

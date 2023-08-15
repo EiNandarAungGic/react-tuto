@@ -15,9 +15,13 @@ export default function Contact(props) {
           {badgeText}
         </div>
       )}
-      <div class="p-4">
+      <div class="p-4 mt-3">
         <div class="h-auto">
-          <img src={props.image} class="object-cover w-1/3 h-auto rounded-lg" />
+          <img
+            src={props.image}
+            alt="Plants"
+            class="object-cover w-1/3 h-auto rounded-lg"
+          />
         </div>
         <h2 class="text-lg font-semibold mt-4">{props.name}</h2>
         <p class="text-gray-600 mt-2">
